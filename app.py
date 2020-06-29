@@ -9,10 +9,14 @@ import webbrowser
 
 def main():
 	rtml_temp = """
-	<div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/1567EA1162F627FBE8D4F3829361DCFA'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
+	<div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/9D1CFC52C70BB8FE8DC0C2A11A3B5CFF'target="_blank"><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/23.png' /></a></div>  
 	"""
 	html_temp = """
 	<a href="https://www.linkedin.com/in/abhishek-vaid-78505811b/" target="_blank"><button>View my Linkedin</button></a>
+	</div>
+	"""
+	gtml_temp = """
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/vKjzSq7njLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	"""
 	ftml_temp = """
@@ -35,7 +39,7 @@ def main():
 	<style>
 		body {
     	color: #DC2F0A;
-    	background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=17b7366792&attid=0.1&permmsgid=msg-a:r5002521112647528594&th=172f0ebe7ff4e155&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_SS3f0YdboUaH-PmPE_6YXtX9GQk9bHjOBMdbd6KEnguKVXeIjNveyFRZDksATuuKT1MIzpu76Uouh-Db_GZQtGmKCy7ox5u-p44XBuDohXsSM763xQZinJDs&disp=emb&realattid=ii_kbwa5ztf0);
+    	background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=17b7366792&attid=0.1&permmsgid=msg-a:r5961599422475648997&th=172f212637dbf15b&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8SYmsTP9nSpj8ZWBEEF6wbJllgLQTNXxNodHKnzhr91UvhF4CZIJVog1Vfs4N7uj4OqeWV4qA1rfjR-x8wm3ae-9EJjKKKaMYDEZxvoZ6xoGx-7F-WIfwc-F0&disp=emb&realattid=ii_kbwlnp270);
     	etc.
 		}
 	</style>
@@ -502,7 +506,14 @@ def main():
 					st.write(submission)
 					st.markdown(get_table_download_link(submission), unsafe_allow_html=True)
 
-
+	
+	st.sidebar.title("Video explanation to use the tool")
+	activities = ["Select an option", "Best way to use this tool"]
+	choice = st.sidebar.selectbox("click box below",activities)
+	if choice == "Best way to use this tool":
+		st.subheader("I have created this tool for people who want to do machine learning, and get to a prediction within a matter of 1-2 minutes and save a lot of time.")
+		st.markdown(gtml_temp,unsafe_allow_html=True)
+		
 	st.sidebar.title("FOR GOOD")
 	activities = ["Select an option", "Change.ORG","Donate to your Favourite Charitable Organization"]
 	choice = st.sidebar.selectbox("click box below",activities)
@@ -524,6 +535,12 @@ def main():
 		st.subheader("Hi I am Abhishek Vaid, a budding Data Scientist")
 		st.markdown(ftml_temp,unsafe_allow_html=True)
 		st.markdown(html_temp,unsafe_allow_html=True)
+		
+	st.sidebar.title("Get the Machine Learning code of this side")
+	activities = ["Select an option", "Code for your education"]
+	choice = st.sidebar.selectbox("click box below",activities)
+	if choice == "Code for your education":
+		st.subheader("You can get code of this application for your education for Rs 499. I would personally send you an email with the complete code within 24 hours of the payment confirmation")
 		st.markdown(rtml_temp,unsafe_allow_html=True)
 
 
