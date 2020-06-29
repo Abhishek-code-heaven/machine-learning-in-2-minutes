@@ -514,6 +514,13 @@ def main():
 		st.subheader("I have created this tool for people who want to do machine learning, and get to a prediction within a matter of 1-2 minutes and save a lot of time.")
 		st.markdown(gtml_temp,unsafe_allow_html=True)
 		
+	st.sidebar.title("Get the Machine Learning code of this side")
+	activities = ["Select an option", "Code for your education"]
+	choice = st.sidebar.selectbox("click box below",activities)
+	if choice == "Code for your education":
+		st.subheader("You can get code of this application for your education for only Rs 499. I would personally send you an email with the complete code within 24 hours of the payment confirmation")
+		st.markdown(rtml_temp,unsafe_allow_html=True)
+		
 	st.sidebar.title("FOR GOOD")
 	activities = ["Select an option", "Change.ORG","Donate to your Favourite Charitable Organization"]
 	choice = st.sidebar.selectbox("click box below",activities)
@@ -536,12 +543,7 @@ def main():
 		st.markdown(ftml_temp,unsafe_allow_html=True)
 		st.markdown(html_temp,unsafe_allow_html=True)
 		
-	st.sidebar.title("Get the Machine Learning code of this side")
-	activities = ["Select an option", "Code for your education"]
-	choice = st.sidebar.selectbox("click box below",activities)
-	if choice == "Code for your education":
-		st.subheader("You can get code of this application for your education for Rs 499. I would personally send you an email with the complete code within 24 hours of the payment confirmation")
-		st.markdown(rtml_temp,unsafe_allow_html=True)
+	
 
 
 
