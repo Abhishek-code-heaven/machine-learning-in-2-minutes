@@ -514,7 +514,7 @@ def main():
 		st.subheader("I have created this tool for people who want to do machine learning, and get to a prediction within a matter of 1-2 minutes and save a lot of time.")
 		st.markdown(gtml_temp,unsafe_allow_html=True)
 		
-	st.sidebar.title("Get the Machine Learning code of this side")
+	st.sidebar.title("Get the Machine Learning code of this application")
 	activities = ["Select an option", "Code for your education"]
 	choice = st.sidebar.selectbox("click box below",activities)
 	if choice == "Code for your education":
