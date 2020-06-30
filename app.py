@@ -11,18 +11,12 @@ def main():
 	rtml_temp = """
 	<div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/9D1CFC52C70BB8FE8DC0C2A11A3B5CFF'target="_blank"><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/23.png' /></a></div>  
 	"""
-	html_temp = """
-	<a href="https://www.linkedin.com/in/abhishek-vaid-78505811b/" target="_blank"><button>View my Linkedin</button></a>
-	</div>
-	"""
+	
 	gtml_temp = """
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/vKjzSq7njLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	"""
-	ftml_temp = """
-	<a href="https://abhishekvaid13.github.io/Abhishek_portfolio_3/" target="_blank"><button>View my Portfolio</button></a>
-	</div>
-	"""
+	
 	jtml_temp = """
 	<a href="https://www.thelifeyoucansave.org/best-charities/" target="_blank"><button>Go to - Life you can save</button></a>
 	</div>
@@ -520,6 +514,7 @@ def main():
 	if choice == "Code for your education":
 		st.subheader("You can get code of this application for your education for only Rs 499. I would personally send you an email with the complete code within 24 hours of the payment confirmation")
 		st.markdown(rtml_temp,unsafe_allow_html=True)
+		st.subheader("You can email me 
 		
 	st.sidebar.title("FOR GOOD")
 	activities = ["Select an option", "Change.ORG","Donate to your Favourite Charitable Organization"]
@@ -535,14 +530,7 @@ def main():
 		st.markdown(ktml_temp,unsafe_allow_html=True)
 
 
-	st.sidebar.title("About the Maker")
-	activities = ["Select an option", "My portfolio"]
-	choice = st.sidebar.selectbox("click box below",activities)
-	if choice == "My portfolio":
-		st.subheader("Hi I am Abhishek Vaid, a budding Data Scientist")
-		st.markdown(ftml_temp,unsafe_allow_html=True)
-		st.markdown(html_temp,unsafe_allow_html=True)
-		
+
 	
 
 
