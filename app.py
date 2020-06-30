@@ -514,7 +514,7 @@ def main():
 	if choice == "Code for your education":
 		st.subheader("You can get code of this application for your education for only Rs 499. I would personally send you an email with the complete code within 24 hours of the payment confirmation")
 		st.markdown(rtml_temp,unsafe_allow_html=True)
-		st.subheader("You can email me 
+		st.subheader("You can email me at abhishekvaid19968@gmail.com for any queries you might have.")
 		
 	st.sidebar.title("FOR GOOD")
 	activities = ["Select an option", "Change.ORG","Donate to your Favourite Charitable Organization"]
